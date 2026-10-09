@@ -1,0 +1,32 @@
+# Template for the external AnomalyCLIP feature export step.
+# The actual exporter will live in the AnomalyCLIP checkout because its model
+# internals and checkpoint paths are external to this repository.
+
+anomalyclip:
+  repo: "external/AnomalyCLIP"
+  source_dir: "external/AnomalyCLIP-main"
+  checkpoint: "external/AnomalyCLIP-main/checkpoints/9_12_4_multiscale/epoch_15.pth"
+  clip_cache_dir: "external/clip_cache"
+  image_size: 518
+  features_list: [24]
+  prototype_layer: -1
+
+export:
+  dataset: "mvtec"
+  data_path: "<MVTEC_ROOT>"
+  output_dir: "features/mvtec_anomalyclip"
+  manifest: "features/manifest.jsonl"
+  splits:
+    - "splits/mvtec/shot_1_seed_0.json"
+    - "splits/mvtec/shot_2_seed_0.json"
+    - "splits/mvtec/shot_4_seed_0.json"
+  save_keys:
+    - features
+    - base_map
+    - mask
+    - image_path
+    - class_name
+
+commands:
+  build_meta: "python scripts/build_anomalyclip_meta.py --dataset mvtec --root <MVTEC_ROOT>"
+  export_features: "python scripts/export_anomalyclip_features.py --dataset mvtec --data-path <MVTEC_ROOT> --output-dir features/mvtec_anomalyclip --manifest features/manifest.jsonl --anomalyclip-root external/AnomalyCLIP-main --checkpoint-path external/AnomalyCLIP-main/checkpoints/9_12_4_multiscale/epoch_15.pth --clip-cache-dir external/clip_cache --splits splits/mvtec/shot_1_seed_0.json splits/mvtec/shot_2_seed_0.json splits/mvtec/shot_4_seed_0.json"
