@@ -1,0 +1,19 @@
+experiment:
+  name: "mvtec_fewshot_prototype"
+  seed: 0
+  shots: [1, 2, 4]
+
+calibration:
+  max_prototypes_per_class: 512
+  alpha: 0.25
+  image_score: "topk_mean"
+  topk_fraction: 0.001
+
+evaluation:
+  pro_max_fpr: 0.30
+  pro_thresholds: 50
+
+paths:
+  split: "splits/mvtec/shot_1_seed_0.json"
+  feature_manifest: "features/manifest.jsonl"
+  output_dir: "runs/mvtec_final512"
