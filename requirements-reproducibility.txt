@@ -1,0 +1,14 @@
+# Core calibration and evaluation environment (Python 3.10.9).
+numpy==2.2.6
+PyYAML==6.0.2
+Pillow==10.4.0
+scipy==1.15.3
+pytest==9.0.2
+
+# Plotting and optional VisA conversion.
+matplotlib==3.10.8
+huggingface-hub==0.36.0
+
+# CUDA acceleration and AnomalyCLIP feature export. The result snapshot used
+# torch==2.7.0+cu128; install it from the PyTorch CUDA index if needed.
+torch==2.7.0
