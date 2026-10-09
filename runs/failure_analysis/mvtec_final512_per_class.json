@@ -1,0 +1,1204 @@
+{
+  "baseline": {
+    "bottle": {
+      "image_auroc": 0.8904761904761904,
+      "normal_fpr_at_95_tpr": 0.6,
+      "num_normals": 20,
+      "num_anomalies": 63
+    },
+    "cable": {
+      "image_auroc": 0.7814842578710645,
+      "normal_fpr_at_95_tpr": 0.6206896551724138,
+      "num_normals": 58,
+      "num_anomalies": 92
+    },
+    "capsule": {
+      "image_auroc": 0.947746310331073,
+      "normal_fpr_at_95_tpr": 0.30434782608695654,
+      "num_normals": 23,
+      "num_anomalies": 109
+    },
+    "carpet": {
+      "image_auroc": 1.0,
+      "normal_fpr_at_95_tpr": 0.0,
+      "num_normals": 28,
+      "num_anomalies": 89
+    },
+    "grid": {
+      "image_auroc": 0.9766081871345029,
+      "normal_fpr_at_95_tpr": 0.047619047619047616,
+      "num_normals": 21,
+      "num_anomalies": 57
+    },
+    "hazelnut": {
+      "image_auroc": 0.965,
+      "normal_fpr_at_95_tpr": 0.2,
+      "num_normals": 40,
+      "num_anomalies": 70
+    },
+    "leather": {
+      "image_auroc": 0.9949048913043478,
+      "normal_fpr_at_95_tpr": 0.0,
+      "num_normals": 32,
+      "num_anomalies": 92
+    },
+    "metal_nut": {
+      "image_auroc": 0.8973607038123167,
+      "normal_fpr_at_95_tpr": 0.5454545454545454,
+      "num_normals": 22,
+      "num_anomalies": 93
+    },
+    "pill": {
+      "image_auroc": 0.8663393344244408,
+      "normal_fpr_at_95_tpr": 0.6538461538461539,
+      "num_normals": 26,
+      "num_anomalies": 141
+    },
+    "screw": {
+      "image_auroc": 0.8370567739290838,
+      "normal_fpr_at_95_tpr": 0.5609756097560976,
+      "num_normals": 41,
+      "num_anomalies": 119
+    },
+    "tile": {
+      "image_auroc": 0.9834054834054834,
+      "normal_fpr_at_95_tpr": 0.06060606060606061,
+      "num_normals": 33,
+      "num_anomalies": 84
+    },
+    "toothbrush": {
+      "image_auroc": 0.8416666666666667,
+      "normal_fpr_at_95_tpr": 0.5833333333333334,
+      "num_normals": 12,
+      "num_anomalies": 30
+    },
+    "transistor": {
+      "image_auroc": 0.8083333333333333,
+      "normal_fpr_at_95_tpr": 0.8166666666666667,
+      "num_normals": 60,
+      "num_anomalies": 40
+    },
+    "wood": {
+      "image_auroc": 0.9736842105263158,
+      "normal_fpr_at_95_tpr": 0.21052631578947367,
+      "num_normals": 19,
+      "num_anomalies": 60
+    },
+    "zipper": {
+      "image_auroc": 0.9401260504201681,
+      "normal_fpr_at_95_tpr": 0.25,
+      "num_normals": 32,
+      "num_anomalies": 119
+    }
+  },
+  "baseline_path": "runs/zero_shot_topk_sweep/metrics.json",
+  "root": "runs/mvtec_final512",
+  "shots": {
+    "1": {
+      "num_classes": 15,
+      "mean_delta_image_auroc": -0.03425224343852779,
+      "mean_delta_normal_fpr_at_95_tpr": 0.08123835102532127,
+      "top_image_improvements": [
+        {
+          "shot": 1,
+          "class_name": "toothbrush",
+          "value": 0.11388888888888889
+        },
+        {
+          "shot": 1,
+          "class_name": "cable",
+          "value": 0.021676661669165414
+        },
+        {
+          "shot": 1,
+          "class_name": "pill",
+          "value": 0.015002727768685276
+        },
+        {
+          "shot": 1,
+          "class_name": "leather",
+          "value": 0.005095108695652217
+        },
+        {
+          "shot": 1,
+          "class_name": "wood",
+          "value": 0.0014619883040935349
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 1,
+          "class_name": "toothbrush",
+          "value": -0.388888888888889
+        },
+        {
+          "shot": 1,
+          "class_name": "transistor",
+          "value": -0.06111111111111108
+        },
+        {
+          "shot": 1,
+          "class_name": "pill",
+          "value": -0.05128205128205132
+        },
+        {
+          "shot": 1,
+          "class_name": "cable",
+          "value": -0.00574712643678162
+        },
+        {
+          "shot": 1,
+          "class_name": "carpet",
+          "value": 0.0
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 1,
+          "class_name": "capsule",
+          "value": -0.22789522669857734
+        },
+        {
+          "shot": 1,
+          "class_name": "screw",
+          "value": -0.20099747215959554
+        },
+        {
+          "shot": 1,
+          "class_name": "hazelnut",
+          "value": -0.05797619047619044
+        },
+        {
+          "shot": 1,
+          "class_name": "metal_nut",
+          "value": -0.04317367220593027
+        },
+        {
+          "shot": 1,
+          "class_name": "transistor",
+          "value": -0.041805555555555575
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 1,
+          "class_name": "capsule",
+          "value": 0.5652173913043478
+        },
+        {
+          "shot": 1,
+          "class_name": "screw",
+          "value": 0.3495934959349593
+        },
+        {
+          "shot": 1,
+          "class_name": "zipper",
+          "value": 0.23958333333333334
+        },
+        {
+          "shot": 1,
+          "class_name": "hazelnut",
+          "value": 0.20833333333333334
+        },
+        {
+          "shot": 1,
+          "class_name": "grid",
+          "value": 0.15873015873015872
+        }
+      ]
+    },
+    "2": {
+      "num_classes": 15,
+      "mean_delta_image_auroc": -0.03378179163495014,
+      "mean_delta_normal_fpr_at_95_tpr": 0.06549883627686831,
+      "top_image_improvements": [
+        {
+          "shot": 2,
+          "class_name": "toothbrush",
+          "value": 0.11481481481481477
+        },
+        {
+          "shot": 2,
+          "class_name": "pill",
+          "value": 0.03282414984542644
+        },
+        {
+          "shot": 2,
+          "class_name": "leather",
+          "value": 0.005095108695652217
+        },
+        {
+          "shot": 2,
+          "class_name": "wood",
+          "value": 0.004093567251461964
+        },
+        {
+          "shot": 2,
+          "class_name": "carpet",
+          "value": -0.003611556982343537
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 2,
+          "class_name": "toothbrush",
+          "value": -0.30555555555555564
+        },
+        {
+          "shot": 2,
+          "class_name": "pill",
+          "value": -0.1923076923076923
+        },
+        {
+          "shot": 2,
+          "class_name": "transistor",
+          "value": -0.12222222222222223
+        },
+        {
+          "shot": 2,
+          "class_name": "metal_nut",
+          "value": -0.015151515151515119
+        },
+        {
+          "shot": 2,
+          "class_name": "cable",
+          "value": -1.850371707708594e-17
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 2,
+          "class_name": "capsule",
+          "value": -0.2330807073527457
+        },
+        {
+          "shot": 2,
+          "class_name": "screw",
+          "value": -0.1765389082462253
+        },
+        {
+          "shot": 2,
+          "class_name": "hazelnut",
+          "value": -0.05226190476190473
+        },
+        {
+          "shot": 2,
+          "class_name": "transistor",
+          "value": -0.04458333333333334
+        },
+        {
+          "shot": 2,
+          "class_name": "bottle",
+          "value": -0.0444444444444444
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 2,
+          "class_name": "capsule",
+          "value": 0.5072463768115941
+        },
+        {
+          "shot": 2,
+          "class_name": "screw",
+          "value": 0.3333333333333333
+        },
+        {
+          "shot": 2,
+          "class_name": "zipper",
+          "value": 0.2916666666666667
+        },
+        {
+          "shot": 2,
+          "class_name": "hazelnut",
+          "value": 0.20833333333333334
+        },
+        {
+          "shot": 2,
+          "class_name": "grid",
+          "value": 0.12698412698412698
+        }
+      ]
+    },
+    "4": {
+      "num_classes": 15,
+      "mean_delta_image_auroc": -0.03125389961024043,
+      "mean_delta_normal_fpr_at_95_tpr": 0.053157769125952374,
+      "top_image_improvements": [
+        {
+          "shot": 4,
+          "class_name": "toothbrush",
+          "value": 0.12129629629629628
+        },
+        {
+          "shot": 4,
+          "class_name": "cable",
+          "value": 0.035169915042478794
+        },
+        {
+          "shot": 4,
+          "class_name": "pill",
+          "value": 0.025004546281142053
+        },
+        {
+          "shot": 4,
+          "class_name": "leather",
+          "value": 0.005095108695652217
+        },
+        {
+          "shot": 4,
+          "class_name": "wood",
+          "value": 0.003216374269005821
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 4,
+          "class_name": "toothbrush",
+          "value": -0.5
+        },
+        {
+          "shot": 4,
+          "class_name": "pill",
+          "value": -0.14102564102564105
+        },
+        {
+          "shot": 4,
+          "class_name": "transistor",
+          "value": -0.13333333333333333
+        },
+        {
+          "shot": 4,
+          "class_name": "wood",
+          "value": -0.017543859649122806
+        },
+        {
+          "shot": 4,
+          "class_name": "cable",
+          "value": -0.017241379310344862
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 4,
+          "class_name": "screw",
+          "value": -0.24622531939605108
+        },
+        {
+          "shot": 4,
+          "class_name": "capsule",
+          "value": -0.1917298231618136
+        },
+        {
+          "shot": 4,
+          "class_name": "hazelnut",
+          "value": -0.06988095238095234
+        },
+        {
+          "shot": 4,
+          "class_name": "bottle",
+          "value": -0.05582010582010577
+        },
+        {
+          "shot": 4,
+          "class_name": "transistor",
+          "value": -0.029444444444444457
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 4,
+          "class_name": "capsule",
+          "value": 0.49275362318840576
+        },
+        {
+          "shot": 4,
+          "class_name": "screw",
+          "value": 0.35772357723577225
+        },
+        {
+          "shot": 4,
+          "class_name": "hazelnut",
+          "value": 0.26666666666666666
+        },
+        {
+          "shot": 4,
+          "class_name": "zipper",
+          "value": 0.23958333333333334
+        },
+        {
+          "shot": 4,
+          "class_name": "bottle",
+          "value": 0.11666666666666665
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "shot": 1,
+      "class_name": "bottle",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8904761904761904,
+      "baseline_normal_fpr_at_95_tpr": 0.6,
+      "calibration_image_auroc_mean": 0.867989417989418,
+      "calibration_image_auroc_std": 0.019574931993318435,
+      "delta_image_auroc_mean": -0.022486772486772482,
+      "delta_image_auroc_std": 0.019574931993318435,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6,
+      "calibration_normal_fpr_at_95_tpr_std": 0.04999999999999999,
+      "delta_normal_fpr_at_95_tpr_mean": 3.700743415417188e-17,
+      "delta_normal_fpr_at_95_tpr_std": 0.04999999999999999,
+      "num_normals": 20,
+      "num_anomalies": 63
+    },
+    {
+      "shot": 1,
+      "class_name": "cable",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.7814842578710645,
+      "baseline_normal_fpr_at_95_tpr": 0.6206896551724138,
+      "calibration_image_auroc_mean": 0.8031609195402298,
+      "calibration_image_auroc_std": 0.01735642688269898,
+      "delta_image_auroc_mean": 0.021676661669165414,
+      "delta_image_auroc_std": 0.017356426882698985,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6149425287356322,
+      "calibration_normal_fpr_at_95_tpr_std": 0.055423280235591704,
+      "delta_normal_fpr_at_95_tpr_mean": -0.00574712643678162,
+      "delta_normal_fpr_at_95_tpr_std": 0.055423280235591704,
+      "num_normals": 58,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 1,
+      "class_name": "capsule",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.947746310331073,
+      "baseline_normal_fpr_at_95_tpr": 0.30434782608695654,
+      "calibration_image_auroc_mean": 0.7198510836324957,
+      "calibration_image_auroc_std": 0.050885877671440136,
+      "delta_image_auroc_mean": -0.22789522669857734,
+      "delta_image_auroc_std": 0.05088587767144013,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8695652173913043,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08695652173913043,
+      "delta_normal_fpr_at_95_tpr_mean": 0.5652173913043478,
+      "delta_normal_fpr_at_95_tpr_std": 0.08695652173913043,
+      "num_normals": 23,
+      "num_anomalies": 109
+    },
+    {
+      "shot": 1,
+      "class_name": "carpet",
+      "num_runs": 3,
+      "baseline_image_auroc": 1.0,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 0.9981273408239701,
+      "calibration_image_auroc_std": 0.0006129716017865333,
+      "delta_image_auroc_mean": -0.0018726591760299671,
+      "delta_image_auroc_std": 0.0006129716017865333,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.0,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0,
+      "delta_normal_fpr_at_95_tpr_std": 0.0,
+      "num_normals": 28,
+      "num_anomalies": 89
+    },
+    {
+      "shot": 1,
+      "class_name": "grid",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9766081871345029,
+      "baseline_normal_fpr_at_95_tpr": 0.047619047619047616,
+      "calibration_image_auroc_mean": 0.9585073795600111,
+      "calibration_image_auroc_std": 0.009896605761023053,
+      "delta_image_auroc_mean": -0.0181008075744918,
+      "delta_image_auroc_std": 0.009896605761023053,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.20634920634920637,
+      "calibration_normal_fpr_at_95_tpr_std": 0.14547859349066158,
+      "delta_normal_fpr_at_95_tpr_mean": 0.15873015873015872,
+      "delta_normal_fpr_at_95_tpr_std": 0.14547859349066158,
+      "num_normals": 21,
+      "num_anomalies": 57
+    },
+    {
+      "shot": 1,
+      "class_name": "hazelnut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.965,
+      "baseline_normal_fpr_at_95_tpr": 0.2,
+      "calibration_image_auroc_mean": 0.9070238095238095,
+      "calibration_image_auroc_std": 0.029373416877299396,
+      "delta_image_auroc_mean": -0.05797619047619044,
+      "delta_image_auroc_std": 0.029373416877299396,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4083333333333334,
+      "calibration_normal_fpr_at_95_tpr_std": 0.12332207155790621,
+      "delta_normal_fpr_at_95_tpr_mean": 0.20833333333333334,
+      "delta_normal_fpr_at_95_tpr_std": 0.12332207155790621,
+      "num_normals": 40,
+      "num_anomalies": 70
+    },
+    {
+      "shot": 1,
+      "class_name": "leather",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9949048913043478,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 1.0,
+      "calibration_image_auroc_std": 0.0,
+      "delta_image_auroc_mean": 0.005095108695652217,
+      "delta_image_auroc_std": 0.0,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.0,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0,
+      "delta_normal_fpr_at_95_tpr_std": 0.0,
+      "num_normals": 32,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 1,
+      "class_name": "metal_nut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8973607038123167,
+      "baseline_normal_fpr_at_95_tpr": 0.5454545454545454,
+      "calibration_image_auroc_mean": 0.8541870316063864,
+      "calibration_image_auroc_std": 0.06794681492108348,
+      "delta_image_auroc_mean": -0.04317367220593027,
+      "delta_image_auroc_std": 0.06794681492108348,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6060606060606061,
+      "calibration_normal_fpr_at_95_tpr_std": 0.18370235837851728,
+      "delta_normal_fpr_at_95_tpr_mean": 0.06060606060606064,
+      "delta_normal_fpr_at_95_tpr_std": 0.18370235837851728,
+      "num_normals": 22,
+      "num_anomalies": 93
+    },
+    {
+      "shot": 1,
+      "class_name": "pill",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8663393344244408,
+      "baseline_normal_fpr_at_95_tpr": 0.6538461538461539,
+      "calibration_image_auroc_mean": 0.8813420621931259,
+      "calibration_image_auroc_std": 0.006291632621206119,
+      "delta_image_auroc_mean": 0.015002727768685276,
+      "delta_image_auroc_std": 0.006291632621206119,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6025641025641025,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08006407690254357,
+      "delta_normal_fpr_at_95_tpr_mean": -0.05128205128205132,
+      "delta_normal_fpr_at_95_tpr_std": 0.08006407690254357,
+      "num_normals": 26,
+      "num_anomalies": 141
+    },
+    {
+      "shot": 1,
+      "class_name": "screw",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8370567739290838,
+      "baseline_normal_fpr_at_95_tpr": 0.5609756097560976,
+      "calibration_image_auroc_mean": 0.6360593017694883,
+      "calibration_image_auroc_std": 0.009303319292583608,
+      "delta_image_auroc_mean": -0.20099747215959554,
+      "delta_image_auroc_std": 0.009303319292583608,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9105691056910569,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07451342593424132,
+      "delta_normal_fpr_at_95_tpr_mean": 0.3495934959349593,
+      "delta_normal_fpr_at_95_tpr_std": 0.07451342593424132,
+      "num_normals": 41,
+      "num_anomalies": 119
+    },
+    {
+      "shot": 1,
+      "class_name": "tile",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9834054834054834,
+      "baseline_normal_fpr_at_95_tpr": 0.06060606060606061,
+      "calibration_image_auroc_mean": 0.9577922077922078,
+      "calibration_image_auroc_std": 0.00885860689596585,
+      "delta_image_auroc_mean": -0.025613275613275605,
+      "delta_image_auroc_std": 0.00885860689596585,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.15151515151515152,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08017428215347244,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0909090909090909,
+      "delta_normal_fpr_at_95_tpr_std": 0.08017428215347244,
+      "num_normals": 33,
+      "num_anomalies": 84
+    },
+    {
+      "shot": 1,
+      "class_name": "toothbrush",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8416666666666667,
+      "baseline_normal_fpr_at_95_tpr": 0.5833333333333334,
+      "calibration_image_auroc_mean": 0.9555555555555556,
+      "calibration_image_auroc_std": 0.011111111111111127,
+      "delta_image_auroc_mean": 0.11388888888888889,
+      "delta_image_auroc_std": 0.011111111111111127,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.19444444444444442,
+      "calibration_normal_fpr_at_95_tpr_std": 0.04811252243246882,
+      "delta_normal_fpr_at_95_tpr_mean": -0.388888888888889,
+      "delta_normal_fpr_at_95_tpr_std": 0.048112522432468836,
+      "num_normals": 12,
+      "num_anomalies": 30
+    },
+    {
+      "shot": 1,
+      "class_name": "transistor",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8083333333333333,
+      "baseline_normal_fpr_at_95_tpr": 0.8166666666666667,
+      "calibration_image_auroc_mean": 0.7665277777777777,
+      "calibration_image_auroc_std": 0.05145341294514588,
+      "delta_image_auroc_mean": -0.041805555555555575,
+      "delta_image_auroc_std": 0.05145341294514588,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7555555555555555,
+      "calibration_normal_fpr_at_95_tpr_std": 0.06309898162000305,
+      "delta_normal_fpr_at_95_tpr_mean": -0.06111111111111108,
+      "delta_normal_fpr_at_95_tpr_std": 0.06309898162000305,
+      "num_normals": 60,
+      "num_anomalies": 40
+    },
+    {
+      "shot": 1,
+      "class_name": "wood",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9736842105263158,
+      "baseline_normal_fpr_at_95_tpr": 0.21052631578947367,
+      "calibration_image_auroc_mean": 0.9751461988304094,
+      "calibration_image_auroc_std": 0.01197403229792003,
+      "delta_image_auroc_mean": 0.0014619883040935349,
+      "delta_image_auroc_std": 0.011974032297920028,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.2631578947368421,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10526315789473684,
+      "delta_normal_fpr_at_95_tpr_mean": 0.05263157894736842,
+      "delta_normal_fpr_at_95_tpr_std": 0.10526315789473684,
+      "num_normals": 19,
+      "num_anomalies": 60
+    },
+    {
+      "shot": 1,
+      "class_name": "zipper",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9401260504201681,
+      "baseline_normal_fpr_at_95_tpr": 0.25,
+      "calibration_image_auroc_mean": 0.9091386554621849,
+      "calibration_image_auroc_std": 0.03931452708071836,
+      "delta_image_auroc_mean": -0.030987394957983156,
+      "delta_image_auroc_std": 0.03931452708071836,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4895833333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.17769502197116646,
+      "delta_normal_fpr_at_95_tpr_mean": 0.23958333333333334,
+      "delta_normal_fpr_at_95_tpr_std": 0.17769502197116646,
+      "num_normals": 32,
+      "num_anomalies": 119
+    },
+    {
+      "shot": 2,
+      "class_name": "bottle",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8904761904761904,
+      "baseline_normal_fpr_at_95_tpr": 0.6,
+      "calibration_image_auroc_mean": 0.846031746031746,
+      "calibration_image_auroc_std": 0.03849001794597502,
+      "delta_image_auroc_mean": -0.0444444444444444,
+      "delta_image_auroc_std": 0.03849001794597502,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.65,
+      "calibration_normal_fpr_at_95_tpr_std": 0.17320508075688773,
+      "delta_normal_fpr_at_95_tpr_mean": 0.050000000000000024,
+      "delta_normal_fpr_at_95_tpr_std": 0.17320508075688773,
+      "num_normals": 20,
+      "num_anomalies": 63
+    },
+    {
+      "shot": 2,
+      "class_name": "cable",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.7814842578710645,
+      "baseline_normal_fpr_at_95_tpr": 0.6206896551724138,
+      "calibration_image_auroc_mean": 0.7545602198900551,
+      "calibration_image_auroc_std": 0.07186007233010004,
+      "delta_image_auroc_mean": -0.026924037981009508,
+      "delta_image_auroc_std": 0.07186007233010003,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6206896551724138,
+      "calibration_normal_fpr_at_95_tpr_std": 0.1580198515502014,
+      "delta_normal_fpr_at_95_tpr_mean": -1.850371707708594e-17,
+      "delta_normal_fpr_at_95_tpr_std": 0.1580198515502014,
+      "num_normals": 58,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 2,
+      "class_name": "capsule",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.947746310331073,
+      "baseline_normal_fpr_at_95_tpr": 0.30434782608695654,
+      "calibration_image_auroc_mean": 0.7146656029783274,
+      "calibration_image_auroc_std": 0.07716541610052402,
+      "delta_image_auroc_mean": -0.2330807073527457,
+      "delta_image_auroc_std": 0.07716541610052402,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8115942028985508,
+      "calibration_normal_fpr_at_95_tpr_std": 0.06641414050660639,
+      "delta_normal_fpr_at_95_tpr_mean": 0.5072463768115941,
+      "delta_normal_fpr_at_95_tpr_std": 0.06641414050660639,
+      "num_normals": 23,
+      "num_anomalies": 109
+    },
+    {
+      "shot": 2,
+      "class_name": "carpet",
+      "num_runs": 3,
+      "baseline_image_auroc": 1.0,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 0.9963884430176565,
+      "calibration_image_auroc_std": 0.0026313958765256757,
+      "delta_image_auroc_mean": -0.003611556982343537,
+      "delta_image_auroc_std": 0.0026313958765256757,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.011904761904761904,
+      "calibration_normal_fpr_at_95_tpr_std": 0.020619652471058063,
+      "delta_normal_fpr_at_95_tpr_mean": 0.011904761904761904,
+      "delta_normal_fpr_at_95_tpr_std": 0.020619652471058063,
+      "num_normals": 28,
+      "num_anomalies": 89
+    },
+    {
+      "shot": 2,
+      "class_name": "grid",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9766081871345029,
+      "baseline_normal_fpr_at_95_tpr": 0.047619047619047616,
+      "calibration_image_auroc_mean": 0.9604566972988025,
+      "calibration_image_auroc_std": 0.009164289987136894,
+      "delta_image_auroc_mean": -0.0161514898357004,
+      "delta_image_auroc_std": 0.009164289987136894,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.17460317460317457,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07273929674533079,
+      "delta_normal_fpr_at_95_tpr_mean": 0.12698412698412698,
+      "delta_normal_fpr_at_95_tpr_std": 0.07273929674533079,
+      "num_normals": 21,
+      "num_anomalies": 57
+    },
+    {
+      "shot": 2,
+      "class_name": "hazelnut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.965,
+      "baseline_normal_fpr_at_95_tpr": 0.2,
+      "calibration_image_auroc_mean": 0.9127380952380952,
+      "calibration_image_auroc_std": 0.01828882971972257,
+      "delta_image_auroc_mean": -0.05226190476190473,
+      "delta_image_auroc_std": 0.01828882971972257,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4083333333333334,
+      "calibration_normal_fpr_at_95_tpr_std": 0.05773502691896257,
+      "delta_normal_fpr_at_95_tpr_mean": 0.20833333333333334,
+      "delta_normal_fpr_at_95_tpr_std": 0.05773502691896256,
+      "num_normals": 40,
+      "num_anomalies": 70
+    },
+    {
+      "shot": 2,
+      "class_name": "leather",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9949048913043478,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 1.0,
+      "calibration_image_auroc_std": 0.0,
+      "delta_image_auroc_mean": 0.005095108695652217,
+      "delta_image_auroc_std": 0.0,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.0,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0,
+      "delta_normal_fpr_at_95_tpr_std": 0.0,
+      "num_normals": 32,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 2,
+      "class_name": "metal_nut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8973607038123167,
+      "baseline_normal_fpr_at_95_tpr": 0.5454545454545454,
+      "calibration_image_auroc_mean": 0.8758553274682307,
+      "calibration_image_auroc_std": 0.03592957174875677,
+      "delta_image_auroc_mean": -0.021505376344086002,
+      "delta_image_auroc_std": 0.03592957174875677,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.5303030303030303,
+      "calibration_normal_fpr_at_95_tpr_std": 0.18924236358783023,
+      "delta_normal_fpr_at_95_tpr_mean": -0.015151515151515119,
+      "delta_normal_fpr_at_95_tpr_std": 0.18924236358783025,
+      "num_normals": 22,
+      "num_anomalies": 93
+    },
+    {
+      "shot": 2,
+      "class_name": "pill",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8663393344244408,
+      "baseline_normal_fpr_at_95_tpr": 0.6538461538461539,
+      "calibration_image_auroc_mean": 0.8991634842698671,
+      "calibration_image_auroc_std": 0.026013151694681495,
+      "delta_image_auroc_mean": 0.03282414984542644,
+      "delta_image_auroc_std": 0.026013151694681495,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4615384615384616,
+      "calibration_normal_fpr_at_95_tpr_std": 0.15384615384615385,
+      "delta_normal_fpr_at_95_tpr_mean": -0.1923076923076923,
+      "delta_normal_fpr_at_95_tpr_std": 0.15384615384615385,
+      "num_normals": 26,
+      "num_anomalies": 141
+    },
+    {
+      "shot": 2,
+      "class_name": "screw",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8370567739290838,
+      "baseline_normal_fpr_at_95_tpr": 0.5609756097560976,
+      "calibration_image_auroc_mean": 0.6605178656828585,
+      "calibration_image_auroc_std": 0.017008389872533444,
+      "delta_image_auroc_mean": -0.1765389082462253,
+      "delta_image_auroc_std": 0.017008389872533444,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.894308943089431,
+      "calibration_normal_fpr_at_95_tpr_std": 0.037256712967120686,
+      "delta_normal_fpr_at_95_tpr_mean": 0.3333333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.03725671296712068,
+      "num_normals": 41,
+      "num_anomalies": 119
+    },
+    {
+      "shot": 2,
+      "class_name": "tile",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9834054834054834,
+      "baseline_normal_fpr_at_95_tpr": 0.06060606060606061,
+      "calibration_image_auroc_mean": 0.967051467051467,
+      "calibration_image_auroc_std": 0.010231158379704565,
+      "delta_image_auroc_mean": -0.016354016354016343,
+      "delta_image_auroc_std": 0.010231158379704565,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.1313131313131313,
+      "calibration_normal_fpr_at_95_tpr_std": 0.04628864338339232,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0707070707070707,
+      "delta_normal_fpr_at_95_tpr_std": 0.04628864338339233,
+      "num_normals": 33,
+      "num_anomalies": 84
+    },
+    {
+      "shot": 2,
+      "class_name": "toothbrush",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8416666666666667,
+      "baseline_normal_fpr_at_95_tpr": 0.5833333333333334,
+      "calibration_image_auroc_mean": 0.9564814814814815,
+      "calibration_image_auroc_std": 0.008929306260178694,
+      "delta_image_auroc_mean": 0.11481481481481477,
+      "delta_image_auroc_std": 0.008929306260178693,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.27777777777777773,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0481125224324688,
+      "delta_normal_fpr_at_95_tpr_mean": -0.30555555555555564,
+      "delta_normal_fpr_at_95_tpr_std": 0.0481125224324688,
+      "num_normals": 12,
+      "num_anomalies": 30
+    },
+    {
+      "shot": 2,
+      "class_name": "transistor",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8083333333333333,
+      "baseline_normal_fpr_at_95_tpr": 0.8166666666666667,
+      "calibration_image_auroc_mean": 0.76375,
+      "calibration_image_auroc_std": 0.0258299728997148,
+      "delta_image_auroc_mean": -0.04458333333333334,
+      "delta_image_auroc_std": 0.0258299728997148,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6944444444444443,
+      "calibration_normal_fpr_at_95_tpr_std": 0.03469443332443553,
+      "delta_normal_fpr_at_95_tpr_mean": -0.12222222222222223,
+      "delta_normal_fpr_at_95_tpr_std": 0.03469443332443553,
+      "num_normals": 60,
+      "num_anomalies": 40
+    },
+    {
+      "shot": 2,
+      "class_name": "wood",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9736842105263158,
+      "baseline_normal_fpr_at_95_tpr": 0.21052631578947367,
+      "calibration_image_auroc_mean": 0.9777777777777777,
+      "calibration_image_auroc_std": 0.009702140364349134,
+      "delta_image_auroc_mean": 0.004093567251461964,
+      "delta_image_auroc_std": 0.009702140364349134,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.22807017543859645,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10956136839295434,
+      "delta_normal_fpr_at_95_tpr_mean": 0.017543859649122806,
+      "delta_normal_fpr_at_95_tpr_std": 0.10956136839295434,
+      "num_normals": 19,
+      "num_anomalies": 60
+    },
+    {
+      "shot": 2,
+      "class_name": "zipper",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9401260504201681,
+      "baseline_normal_fpr_at_95_tpr": 0.25,
+      "calibration_image_auroc_mean": 0.9120273109243698,
+      "calibration_image_auroc_std": 0.037591065603763706,
+      "delta_image_auroc_mean": -0.028098739495798292,
+      "delta_image_auroc_std": 0.037591065603763706,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.5416666666666666,
+      "calibration_normal_fpr_at_95_tpr_std": 0.19094065395649332,
+      "delta_normal_fpr_at_95_tpr_mean": 0.2916666666666667,
+      "delta_normal_fpr_at_95_tpr_std": 0.19094065395649332,
+      "num_normals": 32,
+      "num_anomalies": 119
+    },
+    {
+      "shot": 4,
+      "class_name": "bottle",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8904761904761904,
+      "baseline_normal_fpr_at_95_tpr": 0.6,
+      "calibration_image_auroc_mean": 0.8346560846560847,
+      "calibration_image_auroc_std": 0.04485589965962063,
+      "delta_image_auroc_mean": -0.05582010582010577,
+      "delta_image_auroc_std": 0.04485589965962063,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7166666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.028867513459481315,
+      "delta_normal_fpr_at_95_tpr_mean": 0.11666666666666665,
+      "delta_normal_fpr_at_95_tpr_std": 0.028867513459481315,
+      "num_normals": 20,
+      "num_anomalies": 63
+    },
+    {
+      "shot": 4,
+      "class_name": "cable",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.7814842578710645,
+      "baseline_normal_fpr_at_95_tpr": 0.6206896551724138,
+      "calibration_image_auroc_mean": 0.8166541729135433,
+      "calibration_image_auroc_std": 0.018065357870955846,
+      "delta_image_auroc_mean": 0.035169915042478794,
+      "delta_image_auroc_std": 0.018065357870955846,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.603448275862069,
+      "calibration_normal_fpr_at_95_tpr_std": 0.06216467716317225,
+      "delta_normal_fpr_at_95_tpr_mean": -0.017241379310344862,
+      "delta_normal_fpr_at_95_tpr_std": 0.06216467716317225,
+      "num_normals": 58,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 4,
+      "class_name": "capsule",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.947746310331073,
+      "baseline_normal_fpr_at_95_tpr": 0.30434782608695654,
+      "calibration_image_auroc_mean": 0.7560164871692594,
+      "calibration_image_auroc_std": 0.08001990561547948,
+      "delta_image_auroc_mean": -0.1917298231618136,
+      "delta_image_auroc_std": 0.08001990561547948,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7971014492753623,
+      "calibration_normal_fpr_at_95_tpr_std": 0.05020437123388054,
+      "delta_normal_fpr_at_95_tpr_mean": 0.49275362318840576,
+      "delta_normal_fpr_at_95_tpr_std": 0.05020437123388054,
+      "num_normals": 23,
+      "num_anomalies": 109
+    },
+    {
+      "shot": 4,
+      "class_name": "carpet",
+      "num_runs": 3,
+      "baseline_image_auroc": 1.0,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 0.9967897271268057,
+      "calibration_image_auroc_std": 0.0028937008631331656,
+      "delta_image_auroc_mean": -0.0032102728731942345,
+      "delta_image_auroc_std": 0.0028937008631331656,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.011904761904761904,
+      "calibration_normal_fpr_at_95_tpr_std": 0.020619652471058063,
+      "delta_normal_fpr_at_95_tpr_mean": 0.011904761904761904,
+      "delta_normal_fpr_at_95_tpr_std": 0.020619652471058063,
+      "num_normals": 28,
+      "num_anomalies": 89
+    },
+    {
+      "shot": 4,
+      "class_name": "grid",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9766081871345029,
+      "baseline_normal_fpr_at_95_tpr": 0.047619047619047616,
+      "calibration_image_auroc_mean": 0.9793929267613478,
+      "calibration_image_auroc_std": 0.007298993273228134,
+      "delta_image_auroc_mean": 0.002784739626844853,
+      "delta_image_auroc_std": 0.007298993273228134,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.047619047619047616,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0,
+      "delta_normal_fpr_at_95_tpr_std": 0.0,
+      "num_normals": 21,
+      "num_anomalies": 57
+    },
+    {
+      "shot": 4,
+      "class_name": "hazelnut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.965,
+      "baseline_normal_fpr_at_95_tpr": 0.2,
+      "calibration_image_auroc_mean": 0.8951190476190476,
+      "calibration_image_auroc_std": 0.0511379852694156,
+      "delta_image_auroc_mean": -0.06988095238095234,
+      "delta_image_auroc_std": 0.0511379852694156,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4666666666666666,
+      "calibration_normal_fpr_at_95_tpr_std": 0.12583057392117916,
+      "delta_normal_fpr_at_95_tpr_mean": 0.26666666666666666,
+      "delta_normal_fpr_at_95_tpr_std": 0.12583057392117916,
+      "num_normals": 40,
+      "num_anomalies": 70
+    },
+    {
+      "shot": 4,
+      "class_name": "leather",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9949048913043478,
+      "baseline_normal_fpr_at_95_tpr": 0.0,
+      "calibration_image_auroc_mean": 1.0,
+      "calibration_image_auroc_std": 0.0,
+      "delta_image_auroc_mean": 0.005095108695652217,
+      "delta_image_auroc_std": 0.0,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.0,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0,
+      "delta_normal_fpr_at_95_tpr_std": 0.0,
+      "num_normals": 32,
+      "num_anomalies": 92
+    },
+    {
+      "shot": 4,
+      "class_name": "metal_nut",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8973607038123167,
+      "baseline_normal_fpr_at_95_tpr": 0.5454545454545454,
+      "calibration_image_auroc_mean": 0.8831867057673509,
+      "calibration_image_auroc_std": 0.038123167155425186,
+      "delta_image_auroc_mean": -0.014173998044965774,
+      "delta_image_auroc_std": 0.038123167155425186,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.5757575757575757,
+      "calibration_normal_fpr_at_95_tpr_std": 0.05248638810814781,
+      "delta_normal_fpr_at_95_tpr_mean": 0.030303030303030314,
+      "delta_normal_fpr_at_95_tpr_std": 0.05248638810814781,
+      "num_normals": 22,
+      "num_anomalies": 93
+    },
+    {
+      "shot": 4,
+      "class_name": "pill",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8663393344244408,
+      "baseline_normal_fpr_at_95_tpr": 0.6538461538461539,
+      "calibration_image_auroc_mean": 0.8913438807055828,
+      "calibration_image_auroc_std": 0.02131212033771498,
+      "delta_image_auroc_mean": 0.025004546281142053,
+      "delta_image_auroc_std": 0.02131212033771498,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.5128205128205129,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08006407690254354,
+      "delta_normal_fpr_at_95_tpr_mean": -0.14102564102564105,
+      "delta_normal_fpr_at_95_tpr_std": 0.08006407690254354,
+      "num_normals": 26,
+      "num_anomalies": 141
+    },
+    {
+      "shot": 4,
+      "class_name": "screw",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8370567739290838,
+      "baseline_normal_fpr_at_95_tpr": 0.5609756097560976,
+      "calibration_image_auroc_mean": 0.5908314545330328,
+      "calibration_image_auroc_std": 0.0609239459784854,
+      "delta_image_auroc_mean": -0.24622531939605108,
+      "delta_image_auroc_std": 0.0609239459784854,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9186991869918698,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07840366472351996,
+      "delta_normal_fpr_at_95_tpr_mean": 0.35772357723577225,
+      "delta_normal_fpr_at_95_tpr_std": 0.07840366472351996,
+      "num_normals": 41,
+      "num_anomalies": 119
+    },
+    {
+      "shot": 4,
+      "class_name": "tile",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9834054834054834,
+      "baseline_normal_fpr_at_95_tpr": 0.06060606060606061,
+      "calibration_image_auroc_mean": 0.9594757094757095,
+      "calibration_image_auroc_std": 0.011208446558663787,
+      "delta_image_auroc_mean": -0.023929773929773912,
+      "delta_image_auroc_std": 0.011208446558663787,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.15151515151515152,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10925912955951482,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0909090909090909,
+      "delta_normal_fpr_at_95_tpr_std": 0.10925912955951482,
+      "num_normals": 33,
+      "num_anomalies": 84
+    },
+    {
+      "shot": 4,
+      "class_name": "toothbrush",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8416666666666667,
+      "baseline_normal_fpr_at_95_tpr": 0.5833333333333334,
+      "calibration_image_auroc_mean": 0.9629629629629629,
+      "calibration_image_auroc_std": 0.02566001196398334,
+      "delta_image_auroc_mean": 0.12129629629629628,
+      "delta_image_auroc_std": 0.025660011963983338,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.08333333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08333333333333333,
+      "delta_normal_fpr_at_95_tpr_mean": -0.5,
+      "delta_normal_fpr_at_95_tpr_std": 0.08333333333333331,
+      "num_normals": 12,
+      "num_anomalies": 30
+    },
+    {
+      "shot": 4,
+      "class_name": "transistor",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.8083333333333333,
+      "baseline_normal_fpr_at_95_tpr": 0.8166666666666667,
+      "calibration_image_auroc_mean": 0.7788888888888889,
+      "calibration_image_auroc_std": 0.02647172670633356,
+      "delta_image_auroc_mean": -0.029444444444444457,
+      "delta_image_auroc_std": 0.02647172670633356,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6833333333333332,
+      "calibration_normal_fpr_at_95_tpr_std": 0.028867513459481253,
+      "delta_normal_fpr_at_95_tpr_mean": -0.13333333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.02886751345948125,
+      "num_normals": 60,
+      "num_anomalies": 40
+    },
+    {
+      "shot": 4,
+      "class_name": "wood",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9736842105263158,
+      "baseline_normal_fpr_at_95_tpr": 0.21052631578947367,
+      "calibration_image_auroc_mean": 0.9769005847953216,
+      "calibration_image_auroc_std": 0.00786218108757233,
+      "delta_image_auroc_mean": 0.003216374269005821,
+      "delta_image_auroc_std": 0.00786218108757233,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.1929824561403509,
+      "calibration_normal_fpr_at_95_tpr_std": 0.12154742509255279,
+      "delta_normal_fpr_at_95_tpr_mean": -0.017543859649122806,
+      "delta_normal_fpr_at_95_tpr_std": 0.12154742509255279,
+      "num_normals": 19,
+      "num_anomalies": 60
+    },
+    {
+      "shot": 4,
+      "class_name": "zipper",
+      "num_runs": 3,
+      "baseline_image_auroc": 0.9401260504201681,
+      "baseline_normal_fpr_at_95_tpr": 0.25,
+      "calibration_image_auroc_mean": 0.9131652661064426,
+      "calibration_image_auroc_std": 0.019380062322102987,
+      "delta_image_auroc_mean": -0.026960784313725467,
+      "delta_image_auroc_std": 0.019380062322102983,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.4895833333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07864410870073699,
+      "delta_normal_fpr_at_95_tpr_mean": 0.23958333333333334,
+      "delta_normal_fpr_at_95_tpr_std": 0.07864410870073697,
+      "num_normals": 32,
+      "num_anomalies": 119
+    }
+  ]
+}
