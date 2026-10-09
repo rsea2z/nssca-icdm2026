@@ -1,0 +1,20 @@
+[project]
+name = "industrial-anomaly-fewshot"
+version = "0.1.0"
+description = "Few-shot normal calibration benchmark for industrial anomaly detection."
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "PyYAML>=6.0",
+    "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
