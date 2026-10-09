@@ -1,0 +1,1033 @@
+{
+  "baseline": {
+    "candle": {
+      "image_auroc": 0.8698,
+      "normal_fpr_at_95_tpr": 0.75,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    "capsules": {
+      "image_auroc": 0.8875,
+      "normal_fpr_at_95_tpr": 0.6833333333333333,
+      "num_normals": 60,
+      "num_anomalies": 100
+    },
+    "cashew": {
+      "image_auroc": 0.8914,
+      "normal_fpr_at_95_tpr": 0.7,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    "chewinggum": {
+      "image_auroc": 0.975,
+      "normal_fpr_at_95_tpr": 0.06,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    "fryum": {
+      "image_auroc": 0.8976,
+      "normal_fpr_at_95_tpr": 0.46,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    "macaroni1": {
+      "image_auroc": 0.707,
+      "normal_fpr_at_95_tpr": 0.78,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    "macaroni2": {
+      "image_auroc": 0.5864,
+      "normal_fpr_at_95_tpr": 0.83,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    "pcb1": {
+      "image_auroc": 0.6622,
+      "normal_fpr_at_95_tpr": 0.86,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    "pcb2": {
+      "image_auroc": 0.6773,
+      "normal_fpr_at_95_tpr": 0.81,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    "pcb3": {
+      "image_auroc": 0.6508910891089109,
+      "normal_fpr_at_95_tpr": 0.9504950495049505,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    "pcb4": {
+      "image_auroc": 0.9732673267326732,
+      "normal_fpr_at_95_tpr": 0.19801980198019803,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    "pipe_fryum": {
+      "image_auroc": 0.9762,
+      "normal_fpr_at_95_tpr": 0.12,
+      "num_normals": 50,
+      "num_anomalies": 100
+    }
+  },
+  "baseline_path": "runs/visa_full/zero_shot_topk_sweep/metrics.json",
+  "root": "runs/visa_full",
+  "shots": {
+    "1": {
+      "num_classes": 12,
+      "mean_delta_image_auroc": -0.04355107260726071,
+      "mean_delta_normal_fpr_at_95_tpr": 0.1552924459112578,
+      "top_image_improvements": [
+        {
+          "shot": 1,
+          "class_name": "macaroni2",
+          "value": 0.07424999999999997
+        },
+        {
+          "shot": 1,
+          "class_name": "macaroni1",
+          "value": 0.0588666666666667
+        },
+        {
+          "shot": 1,
+          "class_name": "pcb2",
+          "value": 0.0068166666666666376
+        },
+        {
+          "shot": 1,
+          "class_name": "pcb1",
+          "value": 0.005650000000000007
+        },
+        {
+          "shot": 1,
+          "class_name": "cashew",
+          "value": -0.019766666666666637
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 1,
+          "class_name": "cashew",
+          "value": -0.09666666666666661
+        },
+        {
+          "shot": 1,
+          "class_name": "pcb1",
+          "value": -0.07833333333333332
+        },
+        {
+          "shot": 1,
+          "class_name": "pcb3",
+          "value": -0.03300330033003298
+        },
+        {
+          "shot": 1,
+          "class_name": "macaroni2",
+          "value": 0.05500000000000003
+        },
+        {
+          "shot": 1,
+          "class_name": "capsules",
+          "value": 0.0722222222222222
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 1,
+          "class_name": "pcb4",
+          "value": -0.18945544554455443
+        },
+        {
+          "shot": 1,
+          "class_name": "pipe_fryum",
+          "value": -0.1420333333333333
+        },
+        {
+          "shot": 1,
+          "class_name": "pcb3",
+          "value": -0.10925742574257429
+        },
+        {
+          "shot": 1,
+          "class_name": "capsules",
+          "value": -0.0619166666666666
+        },
+        {
+          "shot": 1,
+          "class_name": "fryum",
+          "value": -0.05616666666666661
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 1,
+          "class_name": "pcb4",
+          "value": 0.5709570957095709
+        },
+        {
+          "shot": 1,
+          "class_name": "pipe_fryum",
+          "value": 0.47666666666666674
+        },
+        {
+          "shot": 1,
+          "class_name": "chewinggum",
+          "value": 0.29333333333333333
+        },
+        {
+          "shot": 1,
+          "class_name": "fryum",
+          "value": 0.25666666666666665
+        },
+        {
+          "shot": 1,
+          "class_name": "macaroni1",
+          "value": 0.13499999999999998
+        }
+      ]
+    },
+    "2": {
+      "num_classes": 12,
+      "mean_delta_image_auroc": -0.03933111019435275,
+      "mean_delta_normal_fpr_at_95_tpr": 0.1474734140080675,
+      "top_image_improvements": [
+        {
+          "shot": 2,
+          "class_name": "macaroni2",
+          "value": 0.08181666666666663
+        },
+        {
+          "shot": 2,
+          "class_name": "macaroni1",
+          "value": 0.042416666666666714
+        },
+        {
+          "shot": 2,
+          "class_name": "pcb1",
+          "value": 0.03384999999999999
+        },
+        {
+          "shot": 2,
+          "class_name": "pcb2",
+          "value": -0.0039333333333333624
+        },
+        {
+          "shot": 2,
+          "class_name": "candle",
+          "value": -0.02153333333333335
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 2,
+          "class_name": "pcb1",
+          "value": -0.1383333333333333
+        },
+        {
+          "shot": 2,
+          "class_name": "cashew",
+          "value": -0.05666666666666661
+        },
+        {
+          "shot": 2,
+          "class_name": "pcb3",
+          "value": -0.04290429042904285
+        },
+        {
+          "shot": 2,
+          "class_name": "capsules",
+          "value": -0.0027777777777778048
+        },
+        {
+          "shot": 2,
+          "class_name": "candle",
+          "value": 0.034999999999999996
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 2,
+          "class_name": "pcb4",
+          "value": -0.251039603960396
+        },
+        {
+          "shot": 2,
+          "class_name": "pipe_fryum",
+          "value": -0.17646666666666663
+        },
+        {
+          "shot": 2,
+          "class_name": "pcb3",
+          "value": -0.047739273927392765
+        },
+        {
+          "shot": 2,
+          "class_name": "fryum",
+          "value": -0.04066666666666663
+        },
+        {
+          "shot": 2,
+          "class_name": "capsules",
+          "value": -0.03727777777777772
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 2,
+          "class_name": "pcb4",
+          "value": 0.6303630363036303
+        },
+        {
+          "shot": 2,
+          "class_name": "pipe_fryum",
+          "value": 0.5433333333333333
+        },
+        {
+          "shot": 2,
+          "class_name": "fryum",
+          "value": 0.27999999999999997
+        },
+        {
+          "shot": 2,
+          "class_name": "chewinggum",
+          "value": 0.26000000000000006
+        },
+        {
+          "shot": 2,
+          "class_name": "macaroni1",
+          "value": 0.12666666666666665
+        }
+      ]
+    },
+    "4": {
+      "num_classes": 12,
+      "mean_delta_image_auroc": -0.040013077557755766,
+      "mean_delta_normal_fpr_at_95_tpr": 0.14117803447011368,
+      "top_image_improvements": [
+        {
+          "shot": 4,
+          "class_name": "macaroni2",
+          "value": 0.08634999999999997
+        },
+        {
+          "shot": 4,
+          "class_name": "macaroni1",
+          "value": 0.06178333333333339
+        },
+        {
+          "shot": 4,
+          "class_name": "pcb1",
+          "value": 0.02153333333333331
+        },
+        {
+          "shot": 4,
+          "class_name": "pcb2",
+          "value": -0.0048000000000000265
+        },
+        {
+          "shot": 4,
+          "class_name": "candle",
+          "value": -0.024866666666666686
+        }
+      ],
+      "top_fpr_reductions": [
+        {
+          "shot": 4,
+          "class_name": "pcb1",
+          "value": -0.07166666666666666
+        },
+        {
+          "shot": 4,
+          "class_name": "cashew",
+          "value": -0.043333333333333314
+        },
+        {
+          "shot": 4,
+          "class_name": "pcb3",
+          "value": -0.019801980198019747
+        },
+        {
+          "shot": 4,
+          "class_name": "candle",
+          "value": -0.013333333333333327
+        },
+        {
+          "shot": 4,
+          "class_name": "macaroni2",
+          "value": 0.041666666666666706
+        }
+      ],
+      "worst_image_regressions": [
+        {
+          "shot": 4,
+          "class_name": "pcb4",
+          "value": -0.19198019801980193
+        },
+        {
+          "shot": 4,
+          "class_name": "pipe_fryum",
+          "value": -0.1468333333333333
+        },
+        {
+          "shot": 4,
+          "class_name": "capsules",
+          "value": -0.1000833333333333
+        },
+        {
+          "shot": 4,
+          "class_name": "pcb3",
+          "value": -0.08399339933993404
+        },
+        {
+          "shot": 4,
+          "class_name": "fryum",
+          "value": -0.04266666666666661
+        }
+      ],
+      "worst_fpr_regressions": [
+        {
+          "shot": 4,
+          "class_name": "pipe_fryum",
+          "value": 0.52
+        },
+        {
+          "shot": 4,
+          "class_name": "pcb4",
+          "value": 0.49504950495049505
+        },
+        {
+          "shot": 4,
+          "class_name": "fryum",
+          "value": 0.27666666666666667
+        },
+        {
+          "shot": 4,
+          "class_name": "chewinggum",
+          "value": 0.2733333333333334
+        },
+        {
+          "shot": 4,
+          "class_name": "capsules",
+          "value": 0.08888888888888886
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "shot": 1,
+      "class_name": "candle",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8698,
+      "baseline_normal_fpr_at_95_tpr": 0.75,
+      "calibration_image_auroc_mean": 0.8141666666666666,
+      "calibration_image_auroc_std": 0.036403552940154994,
+      "delta_image_auroc_mean": -0.05563333333333335,
+      "delta_image_auroc_std": 0.036403552940154994,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8833333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10819735055289784,
+      "delta_normal_fpr_at_95_tpr_mean": 0.13333333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.10819735055289785,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "capsules",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8875,
+      "baseline_normal_fpr_at_95_tpr": 0.6833333333333333,
+      "calibration_image_auroc_mean": 0.8255833333333333,
+      "calibration_image_auroc_std": 0.0390536312154339,
+      "delta_image_auroc_mean": -0.0619166666666666,
+      "delta_image_auroc_std": 0.039053631215433905,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7555555555555555,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09756289519340083,
+      "delta_normal_fpr_at_95_tpr_mean": 0.0722222222222222,
+      "delta_normal_fpr_at_95_tpr_std": 0.09756289519340082,
+      "num_normals": 60,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "cashew",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8914,
+      "baseline_normal_fpr_at_95_tpr": 0.7,
+      "calibration_image_auroc_mean": 0.8716333333333334,
+      "calibration_image_auroc_std": 0.04542429599527843,
+      "delta_image_auroc_mean": -0.019766666666666637,
+      "delta_image_auroc_std": 0.04542429599527843,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6033333333333334,
+      "calibration_normal_fpr_at_95_tpr_std": 0.1498888477061141,
+      "delta_normal_fpr_at_95_tpr_mean": -0.09666666666666661,
+      "delta_normal_fpr_at_95_tpr_std": 0.1498888477061141,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "chewinggum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.975,
+      "baseline_normal_fpr_at_95_tpr": 0.06,
+      "calibration_image_auroc_mean": 0.9410333333333334,
+      "calibration_image_auroc_std": 0.01125089626059481,
+      "delta_image_auroc_mean": -0.033966666666666645,
+      "delta_image_auroc_std": 0.01125089626059481,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.35333333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.14123266855323052,
+      "delta_normal_fpr_at_95_tpr_mean": 0.29333333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.14123266855323052,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8976,
+      "baseline_normal_fpr_at_95_tpr": 0.46,
+      "calibration_image_auroc_mean": 0.8414333333333334,
+      "calibration_image_auroc_std": 0.018496450109863442,
+      "delta_image_auroc_mean": -0.05616666666666661,
+      "delta_image_auroc_std": 0.018496450109863442,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7166666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08140434058861153,
+      "delta_normal_fpr_at_95_tpr_mean": 0.25666666666666665,
+      "delta_normal_fpr_at_95_tpr_std": 0.08140434058861153,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "macaroni1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.707,
+      "baseline_normal_fpr_at_95_tpr": 0.78,
+      "calibration_image_auroc_mean": 0.7658666666666667,
+      "calibration_image_auroc_std": 0.023235375328723766,
+      "delta_image_auroc_mean": 0.0588666666666667,
+      "delta_image_auroc_std": 0.023235375328723766,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.915,
+      "calibration_normal_fpr_at_95_tpr_std": 0.028809720581775857,
+      "delta_normal_fpr_at_95_tpr_mean": 0.13499999999999998,
+      "delta_normal_fpr_at_95_tpr_std": 0.028809720581775857,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "macaroni2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.5864,
+      "baseline_normal_fpr_at_95_tpr": 0.83,
+      "calibration_image_auroc_mean": 0.6606500000000001,
+      "calibration_image_auroc_std": 0.01997846340437626,
+      "delta_image_auroc_mean": 0.07424999999999997,
+      "delta_image_auroc_std": 0.01997846340437626,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8849999999999999,
+      "calibration_normal_fpr_at_95_tpr_std": 0.03449637662132067,
+      "delta_normal_fpr_at_95_tpr_mean": 0.05500000000000003,
+      "delta_normal_fpr_at_95_tpr_std": 0.03449637662132067,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "pcb1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6622,
+      "baseline_normal_fpr_at_95_tpr": 0.86,
+      "calibration_image_auroc_mean": 0.66785,
+      "calibration_image_auroc_std": 0.054040123982093145,
+      "delta_image_auroc_mean": 0.005650000000000007,
+      "delta_image_auroc_std": 0.054040123982093145,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7816666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09806460455570433,
+      "delta_normal_fpr_at_95_tpr_mean": -0.07833333333333332,
+      "delta_normal_fpr_at_95_tpr_std": 0.09806460455570433,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "pcb2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6773,
+      "baseline_normal_fpr_at_95_tpr": 0.81,
+      "calibration_image_auroc_mean": 0.6841166666666667,
+      "calibration_image_auroc_std": 0.04745736683241779,
+      "delta_image_auroc_mean": 0.0068166666666666376,
+      "delta_image_auroc_std": 0.04745736683241779,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8883333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.053072277760302204,
+      "delta_normal_fpr_at_95_tpr_mean": 0.07833333333333327,
+      "delta_normal_fpr_at_95_tpr_std": 0.0530722777603022,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "pcb3",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6508910891089109,
+      "baseline_normal_fpr_at_95_tpr": 0.9504950495049505,
+      "calibration_image_auroc_mean": 0.5416336633663367,
+      "calibration_image_auroc_std": 0.04563180407332128,
+      "delta_image_auroc_mean": -0.10925742574257429,
+      "delta_image_auroc_std": 0.04563180407332128,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9174917491749174,
+      "calibration_normal_fpr_at_95_tpr_std": 0.03893830020792771,
+      "delta_normal_fpr_at_95_tpr_mean": -0.03300330033003298,
+      "delta_normal_fpr_at_95_tpr_std": 0.038938300207927705,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "pcb4",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9732673267326732,
+      "baseline_normal_fpr_at_95_tpr": 0.19801980198019803,
+      "calibration_image_auroc_mean": 0.7838118811881188,
+      "calibration_image_auroc_std": 0.10726339422931741,
+      "delta_image_auroc_mean": -0.18945544554455443,
+      "delta_image_auroc_std": 0.10726339422931741,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7689768976897691,
+      "calibration_normal_fpr_at_95_tpr_std": 0.21913793785409916,
+      "delta_normal_fpr_at_95_tpr_mean": 0.5709570957095709,
+      "delta_normal_fpr_at_95_tpr_std": 0.21913793785409919,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 1,
+      "class_name": "pipe_fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9762,
+      "baseline_normal_fpr_at_95_tpr": 0.12,
+      "calibration_image_auroc_mean": 0.8341666666666666,
+      "calibration_image_auroc_std": 0.037091544409294505,
+      "delta_image_auroc_mean": -0.1420333333333333,
+      "delta_image_auroc_std": 0.0370915444092945,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.5966666666666668,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07201851613763413,
+      "delta_normal_fpr_at_95_tpr_mean": 0.47666666666666674,
+      "delta_normal_fpr_at_95_tpr_std": 0.07201851613763413,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "candle",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8698,
+      "baseline_normal_fpr_at_95_tpr": 0.75,
+      "calibration_image_auroc_mean": 0.8482666666666666,
+      "calibration_image_auroc_std": 0.013659673007311203,
+      "delta_image_auroc_mean": -0.02153333333333335,
+      "delta_image_auroc_std": 0.013659673007311203,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.785,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07765307463326872,
+      "delta_normal_fpr_at_95_tpr_mean": 0.034999999999999996,
+      "delta_normal_fpr_at_95_tpr_std": 0.07765307463326872,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "capsules",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8875,
+      "baseline_normal_fpr_at_95_tpr": 0.6833333333333333,
+      "calibration_image_auroc_mean": 0.8502222222222223,
+      "calibration_image_auroc_std": 0.020979531470953786,
+      "delta_image_auroc_mean": -0.03727777777777772,
+      "delta_image_auroc_std": 0.02097953147095379,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6805555555555555,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10350344420821447,
+      "delta_normal_fpr_at_95_tpr_mean": -0.0027777777777778048,
+      "delta_normal_fpr_at_95_tpr_std": 0.10350344420821447,
+      "num_normals": 60,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "cashew",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8914,
+      "baseline_normal_fpr_at_95_tpr": 0.7,
+      "calibration_image_auroc_mean": 0.8655666666666666,
+      "calibration_image_auroc_std": 0.02766092309860005,
+      "delta_image_auroc_mean": -0.02583333333333328,
+      "delta_image_auroc_std": 0.02766092309860005,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6433333333333334,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09912954487269003,
+      "delta_normal_fpr_at_95_tpr_mean": -0.05666666666666661,
+      "delta_normal_fpr_at_95_tpr_std": 0.09912954487269003,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "chewinggum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.975,
+      "baseline_normal_fpr_at_95_tpr": 0.06,
+      "calibration_image_auroc_mean": 0.9494333333333332,
+      "calibration_image_auroc_std": 0.005305720183600597,
+      "delta_image_auroc_mean": -0.025566666666666644,
+      "delta_image_auroc_std": 0.005305720183600597,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.32,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07042726744663605,
+      "delta_normal_fpr_at_95_tpr_mean": 0.26000000000000006,
+      "delta_normal_fpr_at_95_tpr_std": 0.07042726744663605,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8976,
+      "baseline_normal_fpr_at_95_tpr": 0.46,
+      "calibration_image_auroc_mean": 0.8569333333333334,
+      "calibration_image_auroc_std": 0.021751934779845834,
+      "delta_image_auroc_mean": -0.04066666666666663,
+      "delta_image_auroc_std": 0.021751934779845834,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7400000000000001,
+      "calibration_normal_fpr_at_95_tpr_std": 0.1065833007557938,
+      "delta_normal_fpr_at_95_tpr_mean": 0.27999999999999997,
+      "delta_normal_fpr_at_95_tpr_std": 0.10658330075579382,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "macaroni1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.707,
+      "baseline_normal_fpr_at_95_tpr": 0.78,
+      "calibration_image_auroc_mean": 0.7494166666666665,
+      "calibration_image_auroc_std": 0.030307914257940397,
+      "delta_image_auroc_mean": 0.042416666666666714,
+      "delta_image_auroc_std": 0.030307914257940397,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9066666666666666,
+      "calibration_normal_fpr_at_95_tpr_std": 0.038815804341359034,
+      "delta_normal_fpr_at_95_tpr_mean": 0.12666666666666665,
+      "delta_normal_fpr_at_95_tpr_std": 0.03881580434135903,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "macaroni2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.5864,
+      "baseline_normal_fpr_at_95_tpr": 0.83,
+      "calibration_image_auroc_mean": 0.6682166666666666,
+      "calibration_image_auroc_std": 0.017739945509123355,
+      "delta_image_auroc_mean": 0.08181666666666663,
+      "delta_image_auroc_std": 0.017739945509123358,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.89,
+      "calibration_normal_fpr_at_95_tpr_std": 0.053665631459994964,
+      "delta_normal_fpr_at_95_tpr_mean": 0.06000000000000003,
+      "delta_normal_fpr_at_95_tpr_std": 0.05366563145999497,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "pcb1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6622,
+      "baseline_normal_fpr_at_95_tpr": 0.86,
+      "calibration_image_auroc_mean": 0.69605,
+      "calibration_image_auroc_std": 0.07719426792191245,
+      "delta_image_auroc_mean": 0.03384999999999999,
+      "delta_image_auroc_std": 0.07719426792191245,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7216666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.10815112882751925,
+      "delta_normal_fpr_at_95_tpr_mean": -0.1383333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.10815112882751925,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "pcb2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6773,
+      "baseline_normal_fpr_at_95_tpr": 0.81,
+      "calibration_image_auroc_mean": 0.6733666666666666,
+      "calibration_image_auroc_std": 0.024778996482236054,
+      "delta_image_auroc_mean": -0.0039333333333333624,
+      "delta_image_auroc_std": 0.024778996482236054,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8850000000000001,
+      "calibration_normal_fpr_at_95_tpr_std": 0.0644204936336256,
+      "delta_normal_fpr_at_95_tpr_mean": 0.07499999999999994,
+      "delta_normal_fpr_at_95_tpr_std": 0.0644204936336256,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "pcb3",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6508910891089109,
+      "baseline_normal_fpr_at_95_tpr": 0.9504950495049505,
+      "calibration_image_auroc_mean": 0.6031518151815182,
+      "calibration_image_auroc_std": 0.039855016960116264,
+      "delta_image_auroc_mean": -0.047739273927392765,
+      "delta_image_auroc_std": 0.039855016960116264,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9075907590759075,
+      "calibration_normal_fpr_at_95_tpr_std": 0.04796277788669296,
+      "delta_normal_fpr_at_95_tpr_mean": -0.04290429042904285,
+      "delta_normal_fpr_at_95_tpr_std": 0.04796277788669296,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "pcb4",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9732673267326732,
+      "baseline_normal_fpr_at_95_tpr": 0.19801980198019803,
+      "calibration_image_auroc_mean": 0.7222277227722773,
+      "calibration_image_auroc_std": 0.11179102210934705,
+      "delta_image_auroc_mean": -0.251039603960396,
+      "delta_image_auroc_std": 0.11179102210934706,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8283828382838284,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08803904870743848,
+      "delta_normal_fpr_at_95_tpr_mean": 0.6303630363036303,
+      "delta_normal_fpr_at_95_tpr_std": 0.08803904870743842,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 2,
+      "class_name": "pipe_fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9762,
+      "baseline_normal_fpr_at_95_tpr": 0.12,
+      "calibration_image_auroc_mean": 0.7997333333333333,
+      "calibration_image_auroc_std": 0.01716166270110992,
+      "delta_image_auroc_mean": -0.17646666666666663,
+      "delta_image_auroc_std": 0.017161662701109918,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6633333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09750213672872338,
+      "delta_normal_fpr_at_95_tpr_mean": 0.5433333333333333,
+      "delta_normal_fpr_at_95_tpr_std": 0.09750213672872338,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "candle",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8698,
+      "baseline_normal_fpr_at_95_tpr": 0.75,
+      "calibration_image_auroc_mean": 0.8449333333333332,
+      "calibration_image_auroc_std": 0.025848920029019916,
+      "delta_image_auroc_mean": -0.024866666666666686,
+      "delta_image_auroc_std": 0.025848920029019912,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7366666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09709102258533825,
+      "delta_normal_fpr_at_95_tpr_mean": -0.013333333333333327,
+      "delta_normal_fpr_at_95_tpr_std": 0.09709102258533825,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "capsules",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8875,
+      "baseline_normal_fpr_at_95_tpr": 0.6833333333333333,
+      "calibration_image_auroc_mean": 0.7874166666666667,
+      "calibration_image_auroc_std": 0.10201136919208784,
+      "delta_image_auroc_mean": -0.1000833333333333,
+      "delta_image_auroc_std": 0.10201136919208784,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7722222222222221,
+      "calibration_normal_fpr_at_95_tpr_std": 0.15408030614176732,
+      "delta_normal_fpr_at_95_tpr_mean": 0.08888888888888886,
+      "delta_normal_fpr_at_95_tpr_std": 0.1540803061417673,
+      "num_normals": 60,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "cashew",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8914,
+      "baseline_normal_fpr_at_95_tpr": 0.7,
+      "calibration_image_auroc_mean": 0.863,
+      "calibration_image_auroc_std": 0.025120509548972107,
+      "delta_image_auroc_mean": -0.028399999999999963,
+      "delta_image_auroc_std": 0.025120509548972103,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6566666666666666,
+      "calibration_normal_fpr_at_95_tpr_std": 0.06377042156569664,
+      "delta_normal_fpr_at_95_tpr_mean": -0.043333333333333314,
+      "delta_normal_fpr_at_95_tpr_std": 0.06377042156569662,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "chewinggum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.975,
+      "baseline_normal_fpr_at_95_tpr": 0.06,
+      "calibration_image_auroc_mean": 0.9488,
+      "calibration_image_auroc_std": 0.006319493650602074,
+      "delta_image_auroc_mean": -0.026199999999999963,
+      "delta_image_auroc_std": 0.006319493650602074,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.3333333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09437513796899408,
+      "delta_normal_fpr_at_95_tpr_mean": 0.2733333333333334,
+      "delta_normal_fpr_at_95_tpr_std": 0.09437513796899408,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.8976,
+      "baseline_normal_fpr_at_95_tpr": 0.46,
+      "calibration_image_auroc_mean": 0.8549333333333332,
+      "calibration_image_auroc_std": 0.014489536454513193,
+      "delta_image_auroc_mean": -0.04266666666666661,
+      "delta_image_auroc_std": 0.014489536454513195,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7366666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.06623191577077221,
+      "delta_normal_fpr_at_95_tpr_mean": 0.27666666666666667,
+      "delta_normal_fpr_at_95_tpr_std": 0.06623191577077221,
+      "num_normals": 50,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "macaroni1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.707,
+      "baseline_normal_fpr_at_95_tpr": 0.78,
+      "calibration_image_auroc_mean": 0.7687833333333334,
+      "calibration_image_auroc_std": 0.019332502855726335,
+      "delta_image_auroc_mean": 0.06178333333333339,
+      "delta_image_auroc_std": 0.019332502855726335,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8633333333333333,
+      "calibration_normal_fpr_at_95_tpr_std": 0.03983298465677242,
+      "delta_normal_fpr_at_95_tpr_mean": 0.08333333333333331,
+      "delta_normal_fpr_at_95_tpr_std": 0.03983298465677242,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "macaroni2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.5864,
+      "baseline_normal_fpr_at_95_tpr": 0.83,
+      "calibration_image_auroc_mean": 0.6727500000000001,
+      "calibration_image_auroc_std": 0.02927850747562109,
+      "delta_image_auroc_mean": 0.08634999999999997,
+      "delta_image_auroc_std": 0.02927850747562109,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8716666666666667,
+      "calibration_normal_fpr_at_95_tpr_std": 0.026394443859772226,
+      "delta_normal_fpr_at_95_tpr_mean": 0.041666666666666706,
+      "delta_normal_fpr_at_95_tpr_std": 0.026394443859772233,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "pcb1",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6622,
+      "baseline_normal_fpr_at_95_tpr": 0.86,
+      "calibration_image_auroc_mean": 0.6837333333333334,
+      "calibration_image_auroc_std": 0.08121205985976877,
+      "delta_image_auroc_mean": 0.02153333333333331,
+      "delta_image_auroc_std": 0.08121205985976877,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.7883333333333332,
+      "calibration_normal_fpr_at_95_tpr_std": 0.1140906072674989,
+      "delta_normal_fpr_at_95_tpr_mean": -0.07166666666666666,
+      "delta_normal_fpr_at_95_tpr_std": 0.1140906072674989,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "pcb2",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6773,
+      "baseline_normal_fpr_at_95_tpr": 0.81,
+      "calibration_image_auroc_mean": 0.6725,
+      "calibration_image_auroc_std": 0.0606038282619176,
+      "delta_image_auroc_mean": -0.0048000000000000265,
+      "delta_image_auroc_std": 0.0606038282619176,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.8733333333333334,
+      "calibration_normal_fpr_at_95_tpr_std": 0.08140434058861154,
+      "delta_normal_fpr_at_95_tpr_mean": 0.06333333333333328,
+      "delta_normal_fpr_at_95_tpr_std": 0.08140434058861155,
+      "num_normals": 100,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "pcb3",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.6508910891089109,
+      "baseline_normal_fpr_at_95_tpr": 0.9504950495049505,
+      "calibration_image_auroc_mean": 0.5668976897689769,
+      "calibration_image_auroc_std": 0.052060783047540235,
+      "delta_image_auroc_mean": -0.08399339933993404,
+      "delta_image_auroc_std": 0.052060783047540235,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.9306930693069306,
+      "calibration_normal_fpr_at_95_tpr_std": 0.01656752527790246,
+      "delta_normal_fpr_at_95_tpr_mean": -0.019801980198019747,
+      "delta_normal_fpr_at_95_tpr_std": 0.01656752527790246,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "pcb4",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9732673267326732,
+      "baseline_normal_fpr_at_95_tpr": 0.19801980198019803,
+      "calibration_image_auroc_mean": 0.7812871287128713,
+      "calibration_image_auroc_std": 0.04373351496667132,
+      "delta_image_auroc_mean": -0.19198019801980193,
+      "delta_image_auroc_std": 0.04373351496667132,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.6930693069306931,
+      "calibration_normal_fpr_at_95_tpr_std": 0.09821462786247322,
+      "delta_normal_fpr_at_95_tpr_mean": 0.49504950495049505,
+      "delta_normal_fpr_at_95_tpr_std": 0.09821462786247322,
+      "num_normals": 101,
+      "num_anomalies": 100
+    },
+    {
+      "shot": 4,
+      "class_name": "pipe_fryum",
+      "num_runs": 6,
+      "baseline_image_auroc": 0.9762,
+      "baseline_normal_fpr_at_95_tpr": 0.12,
+      "calibration_image_auroc_mean": 0.8293666666666667,
+      "calibration_image_auroc_std": 0.020515522578444505,
+      "delta_image_auroc_mean": -0.1468333333333333,
+      "delta_image_auroc_std": 0.020515522578444505,
+      "calibration_normal_fpr_at_95_tpr_mean": 0.64,
+      "calibration_normal_fpr_at_95_tpr_std": 0.07483314773547882,
+      "delta_normal_fpr_at_95_tpr_mean": 0.52,
+      "delta_normal_fpr_at_95_tpr_std": 0.07483314773547882,
+      "num_normals": 50,
+      "num_anomalies": 100
+    }
+  ]
+}
