@@ -318,16 +318,16 @@ and methods when using this package.
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{TODO2026trainingfree,
+@inproceedings{liu2026trainingfree,
   title     = {Training-Free Normal-Support Score Calibration for Frozen Vision-Language Anomaly Detection},
-  author    = {TODO: author list},
-  booktitle = {IEEE International Conference on Data Mining (ICDM)},
+  author    = {Liu, Junjie and Wang, Jingnan and Zhang, Boqiang and Li, Kunyu and Zhang, Lichao},
+  booktitle = {Proceedings of the IEEE International Conference on Data Mining (ICDM)},
   year      = {2026}
 }
 ```
 
 ## License
 
-TODO: add a LICENSE file (e.g., MIT or Apache-2.0) before the first public push.
+This repository is released under the [MIT License](LICENSE).
 Third-party artifacts (AnomalyCLIP, CLIP, MVTec AD, VisA) remain under their own
 licenses and are not redistributed here.
